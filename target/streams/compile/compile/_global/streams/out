@@ -1,0 +1,10 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/javaapps/sbt-projects/SparkCovid/src/main/scala/sct/SimpleApp.scala:3:29: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.sql.SparkSession[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/javaapps/sbt-projects/SparkCovid/src/main/scala/sct/SparkCovid1.scala:9:33: procedure syntax is deprecated: instead, add `: Unit =` to explicitly declare `main`'s return type[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def main(args: Array[String]) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/javaapps/sbt-projects/SparkCovid/src/main/scala/sct/SparkCovid1.scala:22:7: local val sc in method main is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val sc: SparkContext = spark.sparkContext[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
