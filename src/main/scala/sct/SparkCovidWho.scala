@@ -47,7 +47,7 @@ object SparkCovidWho {
       .withColumn("Language", Language._udf(col("Language")))
       .withColumn("Pages", Pages._udf(col("Pages")))
       .withColumn("Published Month", PublishedMonth._udf(col("Publishdate")))
-      .withColumn("PublishedYear", PublishedYear._udf(col("Year")))
+      .withColumn("Published Year", PublishedYear._udf(col("Year")))
       .withColumn("Title", Title._udf(col("Title")))
       .withColumn("Volume", Volume._udf(col("Volume")))
       .withColumn("_upddSrc", UpddSrc._udf(col("_updd")))
@@ -65,7 +65,7 @@ object SparkCovidWho {
 
     val df3: DataFrame = df2.select("Abstract", "Accession Number", "AlternateId", "Authors", "CovNum",
       "Database", "Date Added", "DOI", "FulltextLink", "Issue", "Journal", "Keywords", "KJD", "Language", "Pages", "PMID",
-      "PublishDate", "Published Month", "PublishedYear", "SCIELO", "Tags", "Title", "UNKNOWN", "Volume", "WOS", "_updd",
+      "PublishDate", "Published Month", "Published Year", "SCIELO", "Tags", "Title", "UNKNOWN", "Volume", "WOS", "_updd",
       "_upddSrc")
     df3.printSchema()
     df3.show(3, truncate = true)
