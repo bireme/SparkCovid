@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/oliveirmic/Projetos-dev/SparkCovid/ || exit
+cd /home/javaapps/sbt-projects/SparkCovid/ || exit
 
 NOW=$(date +"%Y%m%d%H%M%S")
 

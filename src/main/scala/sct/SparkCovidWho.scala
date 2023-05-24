@@ -16,12 +16,12 @@ object SparkCovidWho {
       .appName("Spark Covid WHO")
       .master("local[*]")
       .config("spark.jars.packages", "org.mongodb.spark:mongo-spark-connector_2.11:2.3.2")
-      .config("spark.mongodb.read.connection.uri", "mongodb://localhost:27017")
+      .config("spark.mongodb.read.connection.uri", "mongodb://localhost:27087")
       .config("spark.mongodb.read.database", "COVID-19_WHO_Excel")
       .config("spark.mongodb.read.collection", "who-repo4covid-biblio.xlsx")
-      .config("spark.mongodb.write.connection.uri", "mongodb://localhost:27017")
-      .config("spark.mongodb.write.database", "COVID-19_WHO_Excel")
-      .config("spark.mongodb.write.collection", "who-repo4covid-biblio.etl")
+      .config("spark.mongodb.write.connection.uri", "mongodb://localhost:27097")
+      .config("spark.mongodb.write.database", "COVID-19_WHO_CSV")
+      .config("spark.mongodb.write.collection", "TESTE")
       .config("spark.mongodb.write.idFieldList", "Refid")
       .getOrCreate()
 
@@ -60,7 +60,7 @@ object SparkCovidWho {
     df1.printSchema()
 
     val df2: DataFrame =
-      df1.withColumn("FulltextLink", FulltextLink._udf(col("Doi"),col("PMID")))
+      df1.withColumn("FulltextLink", FulltextLink._udf(col("Doi"), col("PMID")))
     df2.printSchema()
 
     val df3: DataFrame = df2.select("Abstract", "Accession Number", "AlternateId", "Authors", "CovNum",
