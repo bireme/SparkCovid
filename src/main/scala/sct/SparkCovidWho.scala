@@ -40,6 +40,7 @@ object SparkCovidWho {
       .withColumn("Author", Authors._udf(col("Author"))).withColumnRenamed("Author", "Authors")
       .withColumn("Refid", Abstract._udf(col("Refid"))).withColumnRenamed("Refid", "CovNum")
       .withColumn("Database", Database._udf(col("Database")))
+      .withColumn("D date", Ddate._udf(col("D date")))
       .withColumn("Doi", DOI._udf(col("Doi")))
       .withColumn("Issue", Issue._udf(col("Issue")))
       .withColumn("Journal", Journal._udf(col("Journal")))
@@ -64,9 +65,9 @@ object SparkCovidWho {
     df2.printSchema()
 
     val df3: DataFrame = df2.select("Abstract", "Accession Number", "AlternateId", "Authors", "CovNum",
-      "Database", "Date Added", "DOI", "FulltextLink", "Issue", "Journal", "Keywords", "KJD", "Language", "Pages", "PMID",
+      "Database", "D date", "DOI", "FulltextLink", "Issue", "Journal", "Keywords", "KJD", "Language", "Pages", "PMID",
       "PublishDate", "Published Month", "Published Year", "SCIELO", "Tags", "Title", "UNKNOWN", "Volume", "WOS", "_updd",
-      "_upddSrc")
+      "_upddSrc").withColumnRenamed("D date", "Date Added")
     df3.printSchema()
     df3.show(3, truncate = true)
 
