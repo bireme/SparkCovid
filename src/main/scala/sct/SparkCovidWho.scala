@@ -1,8 +1,9 @@
 package sct
 
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.functions.{col, lit}
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.expressions.Window
 import sp._
 
 import java.sql
@@ -16,10 +17,10 @@ object SparkCovidWho {
       .appName("Spark Covid WHO")
       .master("local[*]")
       .config("spark.jars.packages", "org.mongodb.spark:mongo-spark-connector_2.11:2.3.2")
-      .config("spark.mongodb.read.connection.uri", "mongodb://localhost:27087")
+      .config("spark.mongodb.read.connection.uri", "mongodb://localhost:27017")
       .config("spark.mongodb.read.database", "COVID-19_WHO_Excel")
       .config("spark.mongodb.read.collection", "who-repo4covid-biblio.xlsx")
-      .config("spark.mongodb.write.connection.uri", "mongodb://localhost:27097")
+      .config("spark.mongodb.write.connection.uri", "mongodb://localhost:27017")
       .config("spark.mongodb.write.database", "COVID-19_WHO_CSV")
       .config("spark.mongodb.write.collection", "TESTE")
       .config("spark.mongodb.write.idFieldList", "Refid")
@@ -37,6 +38,7 @@ object SparkCovidWho {
     val df1: DataFrame =
       df.withColumn("Abstract", Abstract._udf(col("Abstract")))
       .withColumn("Accession number", AccessionNumber._udf(col("Accession number")))
+      .withColumn("AlternateId", AlternateId._udf(col("AlternateId")))
       .withColumn("Author", Authors._udf(col("Author"))).withColumnRenamed("Author", "Authors")
       .withColumn("Refid", Abstract._udf(col("Refid"))).withColumnRenamed("Refid", "CovNum")
       .withColumn("Database", Database._udf(col("Database")))
@@ -71,8 +73,12 @@ object SparkCovidWho {
     df3.printSchema()
     df3.show(3, truncate = true)
 
+    val windowSpec = Window.partitionBy("CovNum").orderBy(col("Date Added").asc)
+    val dfWithRowNumber = df3.withColumn("rowNumber", row_number().over(windowSpec))
+    val dfWithoutDuplicates = dfWithRowNumber.filter(col("rowNumber") === 1).drop("rowNumber")
+
     print("Writing content to MongoDB... ")
-    df3.write.format("mongodb").mode("overwrite").save()
+    dfWithoutDuplicates.write.format("mongodb").mode("overwrite").save()
     print("OK.\nFinishing... ")
 
     spark.close()

@@ -7,7 +7,8 @@ object PMID {
   def fix(in: String): String = GeneralFix.fix(in)
 
   def change(in: String): String = {
-    val text: String = Option(in).getOrElse("").trim
+    val textIn: String = Option(in).getOrElse("").trim
+    val text = if (textIn.contains("|")) textIn.split("|")(0) else textIn
 
     val pmid = if (text.contains("-")) ""
     else if (text.contains(":")) {
@@ -15,8 +16,7 @@ object PMID {
       else ""
     } else text
 
-    pmid.trim
+    if (pmid.contains("E")) pmid.split("E")(0).replace(".", "").trim else pmid.trim
   }
-
   val _udf: UserDefinedFunction = udf((in: String) => fix(change(in)))
 }
