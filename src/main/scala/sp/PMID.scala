@@ -8,15 +8,14 @@ object PMID {
 
   def change(in: String): String = {
     val textIn: String = Option(in).getOrElse("").trim
-    val text = if (textIn.contains("|")) textIn.split("|")(0) else textIn
 
-    val pmid = if (text.contains("-")) ""
-    else if (text.contains(":")) {
-      if (text.contains("MEDLINE")) text.replace("MEDLINE:", "")
+    val pmid = if (textIn.contains("-")) ""
+    else if (textIn.contains(":")) {
+      if (textIn.contains("MEDLINE")) textIn.replace("MEDLINE:", "")
       else ""
-    } else text
+    } else textIn
 
-    if (pmid.contains("E")) pmid.split("E")(0).replace(".", "").trim else pmid.trim
+    pmid.trim
   }
   val _udf: UserDefinedFunction = udf((in: String) => fix(change(in)))
 }
