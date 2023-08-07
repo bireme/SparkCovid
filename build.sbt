@@ -9,18 +9,25 @@ lazy val root = (project in file("."))
     name := "SparkCovid"
   )
 
+lazy val intellijRunner = project.in(file("intellijRunner")).dependsOn(RootProject(file("."))).settings(
+  scalaVersion := "2.13.10",
+  libraryDependencies ++= sparkDependencies.map(_ % "compile")
+).disablePlugins(sbtassembly.AssemblyPlugin)
+
 val sparkVersion = "3.4.0" //"3.3.1"
 val mongoSparkConnectorVersion = "10.1.1" //"10.0.2"
 val sparkExcelVersion = "3.3.1_0.18.5"
 val jodaTimeVersion = "2.12.4"
 
-libraryDependencies ++= Seq(
+lazy val sparkDependencies = Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql"  % sparkVersion, /*% "provided",*/
   "org.mongodb.spark" %% "mongo-spark-connector" % mongoSparkConnectorVersion,
   "com.crealytics" %% "spark-excel" % sparkExcelVersion,
   "joda-time" % "joda-time" % jodaTimeVersion
 )
+
+libraryDependencies ++= sparkDependencies.map(_ % "provided")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Ywarn-unused")
 

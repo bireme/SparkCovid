@@ -1,0 +1,258 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.2 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: plugins took 168.0967ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: defsScala took 0.3361ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory C:\Users\oliveirmic\.sbt\1.0\plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Users\oliveirmic\.sbt\1.0\plugins, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 19.0171 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.resolveProject(global-plugins) took 41.5691ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\oliveirmic\.sbt\1.0\plugins, plugins: List(<none>))) took 87.7564ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Users\oliveirmic\.sbt\1.0\plugins, returning: (global-plugins)[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: loadedProjectsRaw took 109.0453ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: cleanEvalClasses took 0.219ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit(file:/C:/Users/oliveirmic/.sbt/1.0/plugins/, ...) took 284.9576ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: load took 477.2738ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: resolveProjects took 5.7411ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: finalTransforms took 52.6646ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: config.delegates took 7.3448ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: Def.make(settings)... took 337.8274ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: structureIndex took 93.0902ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: mkStreams took 1.4786ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading global plugins from C:\Users\oliveirmic\.sbt\1.0\plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 2074.3652ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 30.1421ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.0029ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory C:\Desenvolvimento\bireme\projetos\SparkCovid\project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 7.4492ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Desenvolvimento\bireme\projetos\SparkCovid\project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.8868 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project sparkcovid-build from assembly.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(sparkcovid-build) took 4.1289ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id sparkcovid-build, base: C:\Desenvolvimento\bireme\projetos\SparkCovid\project, plugins: List(<none>))) took 6.5533ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Desenvolvimento\bireme\projetos\SparkCovid\project, returning: (sparkcovid-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 137.1771ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 3.7921ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/C:/Desenvolvimento/bireme/projetos/SparkCovid/project/, ...) took 172.065ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 173.3685ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 0.0992ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 9.3243ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 0.5038ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 107.3336ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 33.4412ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.0026ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from C:\Desenvolvimento\bireme\projetos\SparkCovid\project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 1371.5174ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.0023ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory C:\Desenvolvimento\bireme\projetos\SparkCovid[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.2208ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbtassembly.AssemblyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtassembly.AssemblyPlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbtassembly.AssemblyPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.7533 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 3.0097ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: C:\Desenvolvimento\bireme\projetos\SparkCovid, plugins: List(<none>))) took 5.7435ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Desenvolvimento\bireme\projetos\SparkCovid, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 126.7806ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 3.3194ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/C:/Desenvolvimento/bireme/projetos/SparkCovid/, ...) took 1502.2266ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 1504.4173ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.1056ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 11.6177ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 0.4223ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 69.6834ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 20.556ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.0025ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to SparkCovid (in build file:/C:/Desenvolvimento/bireme/projetos/SparkCovid/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating [0m
+[0m[[0m[0minfo[0m] [0m[0mResolved  dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 29 Scala sources to C:\Desenvolvimento\bireme\projetos\SparkCovid\target\scala-2.13\classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Desenvolvimento\bireme\projetos\SparkCovid\src\main\scala\sct\SimpleApp.scala:3:29: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.sql.SparkSession[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Desenvolvimento\bireme\projetos\SparkCovid\src\main\scala\sct\SparkCovid1.scala:9:33: procedure syntax is deprecated: instead, add `: Unit =` to explicitly declare `main`'s return type[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def main(args: Array[String]) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Desenvolvimento\bireme\projetos\SparkCovid\src\main\scala\sct\SparkCovid1.scala:22:7: local val sc in method main is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val sc: SparkContext = spark.sparkContext[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 7 seconds, 5.065 (82,6%) were spent in GC. [Heap: 0,11GB free of 0,89GB, max 0,89GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 13.336 (136,3%) were spent in GC. [Heap: 0,12GB free of 0,89GB, max 0,89GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 5.593 (58,7%) were spent in GC. [Heap: 0,11GB free of 0,89GB, max 0,89GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 9.467 (98,7%) were spent in GC. [Heap: 0,13GB free of 0,89GB, max 0,89GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[31merror[0m] [0m[0morg.apache.spark.SparkException: Job aborted due to stage failure: Task 5 in stage 2.0 failed 1 times, most recent failure: Lost task 5.0 in stage 2.0 (TID 7) (BIR931960.wdc.paho.org executor driver): java.lang.OutOfMemoryError: GC overhead limit exceeded[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.Arrays.copyOf(Arrays.java:3181)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.grow(ArrayList.java:267)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:241)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.add(ArrayList.java:464)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.convertToRow(BsonDocumentToRowConverter.java:192)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.toRow(BsonDocumentToRowConverter.java:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.toInternalRow(BsonDocumentToRowConverter.java:131)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.read.MongoBatchPartitionReader.next(MongoBatchPartitionReader.java:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.PartitionIterator.hasNext(DataSourceRDD.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.MetricsIterator.hasNext(DataSourceRDD.scala:158)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.$anonfun$hasNext$1(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.$anonfun$hasNext$1$adapted(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1$$Lambda$8866/66828995.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.exists(Option.scala:406)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.hasNext(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:101)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.Task.run(Task.scala:139)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$8820/1182423030.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mDriver stacktrace:[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2785)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2721)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2720)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2720)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1206)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1206)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.foreach(Option.scala:437)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1206)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2984)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2923)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2912)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.lang.OutOfMemoryError: GC overhead limit exceeded[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.Arrays.copyOf(Arrays.java:3181)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.grow(ArrayList.java:267)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:241)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.add(ArrayList.java:464)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.convertToRow(BsonDocumentToRowConverter.java:192)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.toRow(BsonDocumentToRowConverter.java:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.toInternalRow(BsonDocumentToRowConverter.java:131)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.read.MongoBatchPartitionReader.next(MongoBatchPartitionReader.java:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.PartitionIterator.hasNext(DataSourceRDD.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.MetricsIterator.hasNext(DataSourceRDD.scala:158)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.$anonfun$hasNext$1(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.$anonfun$hasNext$1$adapted(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1$$Lambda$8866/66828995.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.exists(Option.scala:406)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.hasNext(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:101)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.Task.run(Task.scala:139)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$8820/1182423030.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) org.apache.spark.SparkException: Job aborted due to stage failure: Task 5 in stage 2.0 failed 1 times, most recent failure: Lost task 5.0 in stage 2.0 (TID 7) (BIR931960.wdc.paho.org executor driver): java.lang.OutOfMemoryError: GC overhead limit exceeded[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.Arrays.copyOf(Arrays.java:3181)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.grow(ArrayList.java:267)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:241)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.ArrayList.add(ArrayList.java:464)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.convertToRow(BsonDocumentToRowConverter.java:192)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.toRow(BsonDocumentToRowConverter.java:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.schema.BsonDocumentToRowConverter.toInternalRow(BsonDocumentToRowConverter.java:131)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.mongodb.spark.sql.connector.read.MongoBatchPartitionReader.next(MongoBatchPartitionReader.java:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.PartitionIterator.hasNext(DataSourceRDD.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.MetricsIterator.hasNext(DataSourceRDD.scala:158)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.$anonfun$hasNext$1(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.$anonfun$hasNext$1$adapted(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1$$Lambda$8866/66828995.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.exists(Option.scala:406)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.datasources.v2.DataSourceRDD$$anon$1.hasNext(DataSourceRDD.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:101)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.scheduler.Task.run(Task.scala:139)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$8820/1182423030.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mDriver stacktrace:[0m

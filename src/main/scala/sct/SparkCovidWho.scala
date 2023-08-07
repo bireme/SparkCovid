@@ -73,12 +73,12 @@ object SparkCovidWho {
     df3.printSchema()
     df3.show(3, truncate = true)
 
-    val windowSpec = Window.partitionBy("CovNum").orderBy(col("Date Added").asc)
-    val dfWithRowNumber = df3.withColumn("rowNumber", row_number().over(windowSpec))
-    val dfWithoutDuplicates = dfWithRowNumber.filter(col("rowNumber") === 1).drop("rowNumber")
+//    val windowSpec = Window.partitionBy("CovNum").orderBy(col("Date Added").desc)
+//    val dfWithRowNumber = df3.withColumn("rowNumber", row_number().over(windowSpec))
+//    val dfWithoutDuplicates = dfWithRowNumber.filter(col("rowNumber") === 1).drop("rowNumber")
 
     print("Writing content to MongoDB... ")
-    dfWithoutDuplicates.write.format("mongodb").mode("overwrite").save()
+    df3.write.format("mongodb").mode("overwrite").save()
     print("OK.\nFinishing... ")
 
     spark.close()

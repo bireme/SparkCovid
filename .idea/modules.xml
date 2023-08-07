@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SparkCovid.iml" filepath="$PROJECT_DIR$/.idea/SparkCovid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkCovid.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkCovid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkCovid-build.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkCovid-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkCovid.intellijRunner.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkCovid.intellijRunner.iml" />
     </modules>
   </component>
 </project>
