@@ -1,5 +1,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Desenvolvimento\bireme\projetos\SparkCovid\target\scala-2.13\sparkcovid_2.13-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	log4j.properties[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Desenvolvimento\bireme\projetos\SparkCovid\target\scala-2.13\classes\log4j.properties[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sct[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Desenvolvimento\bireme\projetos\SparkCovid\target\scala-2.13\classes\sct[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sct\.SparkCovidWho.scala.swp[0m

@@ -1,9 +1,9 @@
 package sct
 
+import org.apache.log4j.Logger
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import org.apache.spark.sql.expressions.Window
 import sp._
 
 import java.sql
@@ -11,6 +11,8 @@ import java.util.Date
 
 object SparkCovidWho {
   def main(args: Array[String]): Unit = {
+
+    val log: Logger = Logger.getLogger(getClass)
 
     val spark: SparkSession = SparkSession
       .builder()
@@ -28,6 +30,7 @@ object SparkCovidWho {
 
     val sc: SparkContext = spark.sparkContext
     sc.setLogLevel("WARN")
+    log.info("> SparkSession started")
 
     val df: DataFrame = spark.read.format("mongodb").load()
     df.printSchema()
@@ -73,16 +76,16 @@ object SparkCovidWho {
     df3.printSchema()
     df3.show(3, truncate = true)
 
-//    val windowSpec = Window.partitionBy("CovNum").orderBy(col("Date Added").desc)
-//    val dfWithRowNumber = df3.withColumn("rowNumber", row_number().over(windowSpec))
-//    val dfWithoutDuplicates = dfWithRowNumber.filter(col("rowNumber") === 1).drop("rowNumber")
+    val duplicatedIDs: DataFrame = df3.groupBy("CovNum").count().filter(col("count") > 1).select("CovNum")
+    if (duplicatedIDs.collectAsList().size() > 0) log.warn(s"Number of duplicated IDs: ${duplicatedIDs.collectAsList().size()}")
+    duplicatedIDs.collectAsList().toArray.foreach(f => log.warn(s"Duplicated ID: $f"))
 
-    print("Writing content to MongoDB... ")
+    log.info("Writing content to MongoDB...")
     df3.write.format("mongodb").mode("overwrite").save()
-    print("OK.\nFinishing... ")
 
     spark.close()
     spark.stop()
-    println("OK\n\n\n")
+    log.info("> SparkSession stopped")
+    log.info("> Finishing\n")
   }
 }
