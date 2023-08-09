@@ -1,7 +1,5 @@
 package sct
 
-import org.apache.spark.sql.SparkSession
-
 import java.text.SimpleDateFormat
 import java.util.{Date, Locale}
 import scala.util.{Failure, Success, Try}

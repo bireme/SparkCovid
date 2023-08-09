@@ -1,12 +1,12 @@
 package sct
 
-import org.apache.spark.SparkContext
+//import org.apache.spark.SparkContext
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions.{col, udf}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object SparkCovid1  {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
   val spark: SparkSession = SparkSession
     .builder()
     .appName("Spark Excel example")
@@ -19,7 +19,7 @@ object SparkCovid1  {
     //.config("spark.mongodb.write.writeConcern.wTimeoutMS", "1")
     .getOrCreate()
 
-  val sc: SparkContext = spark.sparkContext
+  //val sc: SparkContext = spark.sparkContext
   //sc.setLogLevel("WARN")
 
   val df: DataFrame = spark.read

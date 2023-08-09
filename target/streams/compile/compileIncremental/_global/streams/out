@@ -2,27 +2,27 @@
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 114 products, 29 sources, 7 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/sp/Keywords.scala, ${BASE}/src/main/scala/sp/AlternateId.scala, ${BASE}/src/main/scala/sp/GeneralFix.scala, ${BASE}/src/main/scala/sp/PublishedYear.scala, ${BASE}/src/main/scala/sp/Volume.scala, ${BASE}/src/main/scala/sp/Database.scala, ${BASE}/src/main/scala/sp/KJD.scala, ${BASE}/src/main/scala/sct/SparkCovid1.scala, ${BASE}/src/main/scala/sp/CovNum.scala, ${BASE}/src/main/scala/sp/FulltextLink.scala, ${BASE}/src/main/scala/sp/Issue.scala, ${BASE}/src/main/scala/sp/Pages.scala, ${BASE}/src/main/scala/sct/SimpleApp.scala, ${BASE}/src/main/scala/sp/WOS.scala, ${BASE}/src/main/scala/sp/UpddSrc.scala, ${BASE}/src/main/scala/sp/Ddate.scala, ${BASE}/src/main/scala/sp/SCIELO.scala, ${BASE}/src/main/scala/sp/UNKNOWN.scala, ${BASE}/src/main/scala/sp/Title.scala, ${BASE}/src/main/scala/sp/AccessionNumber.scala, ${BASE}/src/main/scala/sp/Language.scala, ${BASE}/src/main/scala/sp/Journal.scala, ${BASE}/src/main/scala/sp/PublishedMonth.scala, ${BASE}/src/main/scala/sp/PMID.scala, ${BASE}/src/main/scala/sp/DateAdded.scala, ${BASE}/src/main/scala/sp/Abstract.scala, ${BASE}/src/main/scala/sct/SparkCovidWho.scala, ${BASE}/src/main/scala/sp/DOI.scala, ${BASE}/src/main/scala/sp/Authors.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/sct/SparkCovidWho.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/sct/SparkCovid1.scala, ${BASE}/src/main/scala/sct/SimpleApp.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/sct/SparkCovidWho.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/sct/SparkCovid1.scala, ${BASE}/src/main/scala/sct/SimpleApp.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(sct.SparkCovidWho)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(sct.SparkCovid1, sct.SimpleApp)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(sct.SparkCovidWho)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/sct/SparkCovidWho.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: sct.SparkCovidWho[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(sct.SparkCovid1, sct.SimpleApp)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/sct/SparkCovid1.scala, ${BASE}/src/main/scala/sct/SimpleApp.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: sct.SparkCovid1, sct.SimpleApp[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Desenvolvimento\bireme\projetos\SparkCovid\target\scala-2.13\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Desenvolvimento\bireme\projetos\SparkCovid\target\scala-2.13\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.8.0:compile for Scala 2.13.10[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 26cfe73f for Scala compiler version 2.13.10[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 37fb4a82 for Scala compiler version 2.13.10[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-unchecked[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
@@ -38,5 +38,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.7237225 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.3067947 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
