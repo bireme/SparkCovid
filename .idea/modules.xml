@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkCovid-build.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkCovid-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkCovid.intellijRunner.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkCovid.intellijRunner.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/intellijRunner.iml" filepath="$PROJECT_DIR$/.idea/modules/intellijRunner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projetos.SparkCovid.intellijRunner.iml" filepath="$PROJECT_DIR$/.idea/modules/projetos.SparkCovid.intellijRunner.iml" />
     </modules>
   </component>
 </project>
