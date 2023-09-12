@@ -17,7 +17,6 @@ val sparkVersion = "3.4.0" //"3.3.1"
 val mongoSparkConnectorVersion = "10.1.1" //"10.0.2"
 val sparkExcelVersion = "3.3.1_0.18.5"
 val jodaTimeVersion = "2.12.5"
-val log4j = "1.2.17"
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
@@ -25,7 +24,6 @@ libraryDependencies ++= Seq(
   "org.mongodb.spark" %% "mongo-spark-connector" % mongoSparkConnectorVersion,
   "com.crealytics" %% "spark-excel" % sparkExcelVersion,
   "joda-time" % "joda-time" % jodaTimeVersion,
-  "log4j" % "log4j" % log4j,
 )
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Ywarn-unused")

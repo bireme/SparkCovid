@@ -1,6 +1,6 @@
 package sct
 
-import org.apache.log4j.Logger
+import org.apache.log4j.{Logger, PropertyConfigurator}
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
@@ -12,6 +12,7 @@ import java.util.Date
 object SparkCovidWho {
   def main(args: Array[String]): Unit = {
 
+    PropertyConfigurator.configure("./src/main/resources/log4j.properties")
     val log: Logger = Logger.getLogger(getClass)
 
     val spark: SparkSession = SparkSession
@@ -28,8 +29,8 @@ object SparkCovidWho {
       .config("spark.mongodb.write.idFieldList", "Refid")
       .getOrCreate()
 
-    val sc: SparkContext = spark.sparkContext
-    sc.setLogLevel("WARN")
+    val context: SparkContext = spark.sparkContext
+    context.setLogLevel("INFO")
     log.info("> SparkSession started")
 
     val df: DataFrame = spark.read.format("mongodb").load()
@@ -43,7 +44,7 @@ object SparkCovidWho {
       .withColumn("Accession number", AccessionNumber._udf(col("Accession number")))
       .withColumn("AlternateId", AlternateId._udf(col("AlternateId")))
       .withColumn("Author", Authors._udf(col("Author"))).withColumnRenamed("Author", "Authors")
-      .withColumn("Refid", Abstract._udf(col("Refid"))).withColumnRenamed("Refid", "CovNum")
+      .withColumn("Refid", CovNum._udf(col("Refid"))).withColumnRenamed("Refid", "CovNum")
       .withColumn("Database", Database._udf(col("Database")))
       .withColumn("D date", Ddate._udf(col("D date")))
       .withColumn("Doi", DOI._udf(col("Doi")))
@@ -77,8 +78,14 @@ object SparkCovidWho {
     df3.show(3, truncate = true)
 
     val duplicatedIDs: DataFrame = df3.groupBy("CovNum").count().filter(col("count") > 1).select("CovNum")
-    if (duplicatedIDs.collectAsList().size() > 0) log.warn(s"Number of duplicated IDs: ${duplicatedIDs.collectAsList().size()}")
-    duplicatedIDs.collectAsList().toArray.foreach(f => log.warn(s"Duplicated ID: $f"))
+    if (duplicatedIDs.collectAsList().size() > 0) {
+
+      log.warn(s"Number of duplicated IDs: ${duplicatedIDs.collectAsList().size()}")
+
+      duplicatedIDs.collectAsList().toArray.foreach {
+        f => log.warn(s"Duplicated ID: ${f.toString.trim}")
+      }
+    }
 
     log.info("Writing content to MongoDB...")
     df3.write.format("mongodb").mode("overwrite").save()
